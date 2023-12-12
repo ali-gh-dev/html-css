@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+================================================
+fonts
+================================================
+*/
+
+
+@font-face {
+    font-family: "vazir-farsi-digits";
+    src: url("../fonts/vazir-farsi-digits/Vazir-Medium-FD-WOL.woff") format("woff"),
+    url("../fonts/vazir-farsi-digits/Vazir-Medium-FD-WOL.woff2") format("woff2"),
+    url("../fonts/vazir-farsi-digits/Vazir-Medium-FD-WOL.ttf") format("truetype");
+}
+
+/*
+================================================
+variables
+================================================
+*/
+
+:root {
+    --clr-primary: #e2711d;
+    --clr-primary-light: #ffb627;
+    --clr-grey-1: #102a42;
+    --clr-grey-5: #617d98;
+    --clr-grey-10: #f1f5f8;
+    --clr-white: #fff;
+    --ff-primary: "vazir-farsi-digits", sans-serif;
+}
+
+
+/*
+================================================
+styles
+================================================
+*/
+
+
+body {
+    font-size: 1rem;
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-1);
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../images/desert.jpg") center/cover;
+}
+
+h1 {
+    text-align: center;
+    color: #ee7714;
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: 100px;
+}
+
+p {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 150px;
+}
