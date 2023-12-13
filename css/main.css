@@ -32,12 +32,14 @@ variables
     --clr-grey-10: #f1f5f8;
     --clr-white: #fff;
     --ff-primary: "vazir-farsi-digits", sans-serif;
+    --radius: 0.5rem;
+    --transition: all 0.25s linear;
 }
 
 
 /*
 ================================================
-styles
+main styles
 ================================================
 */
 
@@ -50,28 +52,78 @@ body {
     text-align: right;
 }
 
+h1 {
+    font-size: 1.75rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+@media screen  and (min-width: 800px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+
 a {
     text-decoration: none;
 }
 
-header {
-    width: 100vw;
+.btn {
+    background: var(--clr-primary);
+    color: var(--clr-white);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: var(--clr-primary-light);
+    color: var(--clr-primary);
+}
+
+
+/*
+================================================
+header
+================================================
+*/
+
+.header {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../images/desert.jpg") center/cover no-repeat fixed;
     height: 100vh;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../images/desert.jpg") center/cover;
+    position: relative;
 }
 
-h1 {
-    text-align: center;
-    color: #ee7714;
-    font-size: 3rem;
-    font-weight: bold;
-    padding-top: 100px;
-}
-
-p {
-    text-align: center;
+.banner {
+    width: 100%;
     color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding-top: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.banner h1 {
+    color: var(--clr-primary);
+
+    margin-bottom: 2rem;
+}
+
+.banner h2 {
+    color: var(--clr-white);
+    margin-bottom: 3rem;
+}
+
+.btn-banner {
+    font-size: 1.25rem;
+    padding: 0.75rem 1.25rem;
+    outline: 0.125rem solid var(--clr-primary);
+    outline-offset: 0.25rem;
 }
