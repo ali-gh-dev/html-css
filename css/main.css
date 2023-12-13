@@ -132,5 +132,42 @@ header
 
 .content-divider {
     height: 0.5rem;
-    background: linear-gradient(to right, var(--clr-primary) , var(--clr-primary-light) , var(--clr-primary));
+    background: linear-gradient(to right, var(--clr-primary), var(--clr-primary-light), var(--clr-primary));
+}
+
+/*
+================================================
+features
+================================================
+*/
+
+.features {
+    /*background: var(--clr-grey-10);*/
+    background: red;
+}
+
+.feature {
+    text-align: center;
+    float: right;
+    width: 25%;
+     background: var(--clr-grey-10);
+}
+
+.feature:hover {
+    background: var(--clr-white);
+    border-bottom: 3px solid var(--clr-primary);
+}
+
+.feature-icon i {
+    font-size: 3rem;
+    color: var(--clr-primary);
+    margin-bottom: 2rem;
+}
+
+.feature h4 {
+    margin-bottom: 2rem;
+}
+
+.feature p {
+    padding: 10px;
 }
