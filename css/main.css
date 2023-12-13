@@ -127,3 +127,10 @@ header
     outline: 0.125rem solid var(--clr-primary);
     outline-offset: 0.25rem;
 }
+
+/*content divider*/
+
+.content-divider {
+    height: 0.5rem;
+    background: linear-gradient(to right, var(--clr-primary) , var(--clr-primary-light) , var(--clr-primary));
+}
