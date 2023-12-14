@@ -60,6 +60,10 @@ h2 {
     font-size: 1.5rem;
 }
 
+h4 {
+    font-size: 1rem;
+}
+
 @media screen  and (min-width: 800px) {
     h1 {
         font-size: 2rem;
@@ -67,6 +71,10 @@ h2 {
 
     h2 {
         font-size: 1.75rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
     }
 }
 
@@ -85,6 +93,12 @@ a {
 .btn:hover {
     background: var(--clr-primary-light);
     color: var(--clr-primary);
+}
+
+.clear-fix::after, .clear-fix::before {
+    content: "";
+    clear: both;
+    display: block;
 }
 
 
@@ -141,16 +155,28 @@ features
 ================================================
 */
 
-.features {
-    /*background: var(--clr-grey-10);*/
-    background: red;
-}
 
 .feature {
+    background: var(--clr-grey-10);
     text-align: center;
     float: right;
-    width: 25%;
-     background: var(--clr-grey-10);
+
+    /*mobile first design*/
+    width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+    .feature {
+        width: 50%;
+        float: right;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .feature {
+        width: 25%;
+        float: right;
+    }
 }
 
 .feature:hover {
@@ -158,16 +184,17 @@ features
     border-bottom: 3px solid var(--clr-primary);
 }
 
-.feature-icon i {
+.feature i {
     font-size: 3rem;
     color: var(--clr-primary);
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
+    display: inline-block;
 }
 
 .feature h4 {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
-.feature p {
-    padding: 10px;
-}
+/*.feature p {*/
+/*    padding: 10px;*/
+/*}*/
