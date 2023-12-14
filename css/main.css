@@ -155,11 +155,17 @@ features
 ================================================
 */
 
+.features {
+    background: var(--clr-grey-10);
+}
 
 .feature {
-    background: var(--clr-grey-10);
     text-align: center;
     float: right;
+    padding: 1rem 0;
+    transition: var(--transition);
+    height: 250px;
+    overflow: hidden;
 
     /*mobile first design*/
     width: 100%;
@@ -181,7 +187,13 @@ features
 
 .feature:hover {
     background: var(--clr-white);
-    border-bottom: 3px solid var(--clr-primary);
+    /*border-bottom: 3px solid var(--clr-primary);*/
+    box-shadow:0 3px 0 var(--clr-primary) ;
+
+}
+
+.feature:hover i {
+    transform: translateY(-8px);
 }
 
 .feature i {
@@ -189,12 +201,14 @@ features
     color: var(--clr-primary);
     margin-bottom: 1.25rem;
     display: inline-block;
+    transition: var(--transition);
 }
 
 .feature h4 {
     margin-bottom: 1.5rem;
 }
 
-/*.feature p {*/
-/*    padding: 10px;*/
-/*}*/
+.feature p {
+    color: var(--clr-grey-5);
+    padding: 0 2rem;
+}
