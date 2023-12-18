@@ -394,3 +394,29 @@ services
     border-top-right-radius: var(--radius);
     border-top-left-radius: var(--radius);
 }
+
+.service-info {
+    text-align: center;
+    padding: 3rem 1rem 2.5rem 1rem;
+}
+
+.service-info p {
+    color: var(--clr-grey-5);
+    max-width: 20rem;
+    margin: 1rem auto;
+}
+
+@media screen and (min-width: 768px) {
+    .service-card {
+        float: right;
+        width: 45%;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .service-card {
+        width: 30%;
+        margin-left: 3.33%;
+    }
+}
