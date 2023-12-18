@@ -381,6 +381,7 @@ services
     border-radius: var(--radius);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
+
 }
 
 .service-card:hover {
@@ -419,4 +420,21 @@ services
         width: 30%;
         margin-left: 3.33%;
     }
+}
+
+.service-img-container{
+    position: relative;
+}
+
+.service-icon{
+    color: var(--clr-primary);
+    font-size: 1.75rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    background: var(--clr-primary-light);
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    border: 0.4rem solid var(--clr-grey-10);
 }
