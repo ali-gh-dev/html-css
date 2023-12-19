@@ -422,11 +422,11 @@ services
     }
 }
 
-.service-img-container{
+.service-img-container {
     position: relative;
 }
 
-.service-icon{
+.service-icon {
     color: var(--clr-primary);
     font-size: 1.75rem;
     position: absolute;
@@ -446,6 +446,24 @@ contact us
 ================================================
 */
 
-.contact{
+.contact {
     background: var(--clr-grey-10);
+}
+
+.contact article {
+    margin: 1rem 0;
+}
+
+.contact-item {
+    margin-bottom: 1.7rem;
+}
+
+.contact-title {
+    color: var(--clr-primary);
+    direction: rtl;
+    font-weight: 700;
+}
+
+.contact-text {
+    font-size: 1.1rem;
 }
