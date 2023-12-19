@@ -467,3 +467,39 @@ contact us
 .contact-text {
     font-size: 1.1rem;
 }
+
+.contact-form {
+    background: var(--clr-white);
+    border-radius: var(--radius);
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.contact-form:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form h3 {
+    color: var(--clr-grey-5);
+    padding-top: 1.25rem;
+}
+
+.form-group {
+    padding: 1rem 1.5rem;
+}
+
+.form-control {
+    background: var(--clr-grey-10);
+    display: block;
+    width: 100%;
+    margin-bottom: 1.25rem;
+    padding: 0.5rem;
+    direction: rtl;
+    border-radius: var(--radius);
+}
+
+.submit-btn {
+
+    width: 100%;
+}
