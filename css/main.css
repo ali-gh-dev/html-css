@@ -438,3 +438,14 @@ services
     border-radius: 50%;
     border: 0.4rem solid var(--clr-grey-10);
 }
+
+
+/*
+================================================
+contact us
+================================================
+*/
+
+.contact{
+    background: var(--clr-grey-10);
+}
