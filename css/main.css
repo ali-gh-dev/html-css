@@ -529,7 +529,31 @@ contact us
 */
 
 
-.footer{
+.footer {
     background: #222;
     color: var(--clr-white);
+    text-align: center;
+}
+
+.social-icons a {
+    color: var(--clr-white);
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    transition: var(--transition);
+}
+
+.social-icons a:hover{
+    color: var(--clr-primary);
+}
+
+.footer-text{
+    direction: rtl;
+    font-size: 1.1rem;
+}
+
+.company{
+    color: var(--clr-primary);
+    font-size: 1.3rem;
 }
