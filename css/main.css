@@ -544,16 +544,39 @@ contact us
     transition: var(--transition);
 }
 
-.social-icons a:hover{
+.social-icons a:hover {
     color: var(--clr-primary);
 }
 
-.footer-text{
+.footer-text {
     direction: rtl;
     font-size: 1.1rem;
 }
 
-.company{
+.company {
     color: var(--clr-primary);
     font-size: 1.3rem;
+}
+
+/*
+================================================
+navbar
+================================================
+*/
+
+.nav-btn {
+    font-size: 2.5rem;
+    color: var(--clr-primary);
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    z-index: 2;
+    cursor: pointer;
+    animation: navbar 2s linear infinite;
+}
+
+@keyframes navbar {
+    50% {
+        transform: scale(1.5);
+    }
 }
