@@ -153,13 +153,14 @@ header
 
 .banner h1 {
     color: var(--clr-primary);
-
     margin-bottom: 2rem;
+    animation: header-anim-h1 2s linear 1;
 }
 
 .banner h2 {
     color: var(--clr-white);
     margin-bottom: 3rem;
+    animation: header-anim-h2 2s linear 1;
 }
 
 .btn-banner {
@@ -167,6 +168,7 @@ header
     padding: 0.75rem 1.25rem;
     outline: 0.125rem solid var(--clr-primary);
     outline-offset: 0.25rem;
+    animation: header-anim-btn 2s linear 1;
 }
 
 /*content divider*/
@@ -174,6 +176,40 @@ header
 .content-divider {
     height: 0.5rem;
     background: linear-gradient(to right, var(--clr-primary), var(--clr-primary-light), var(--clr-primary));
+}
+
+
+@keyframes header-anim-h1 {
+    0% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+     100% {
+        transform: translateY(0px);
+         opacity: 1;
+    }
+}
+
+@keyframes header-anim-h2 {
+    0% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+     100% {
+        transform: translateX(0px);
+         opacity: 1;
+    }
+}
+
+@keyframes header-anim-btn {
+    0% {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+     100% {
+        transform: translateY(0px);
+         opacity: 1;
+    }
 }
 
 /*
@@ -572,10 +608,10 @@ navbar
     right: 5%;
     z-index: 2;
     cursor: pointer;
-    animation: navbar 2s linear infinite;
+    animation: navbar-animation 2s linear infinite;
 }
 
-@keyframes navbar {
+@keyframes navbar-animation {
     50% {
         transform: scale(1.5);
     }
