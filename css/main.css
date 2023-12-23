@@ -590,6 +590,13 @@ navbar
     width: 100%;
     height: 100%;
     box-shadow: 2px 0 2px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+
+    transform: translateX(100%);
+}
+
+.ShowNav {
+    transform: translateX(0);
 }
 
 @media screen and (min-width: 600px) {
@@ -612,7 +619,7 @@ navbar
     transition: var(--transition);
 }
 
-.nav-close:hover{
+.nav-close:hover {
     color: #bb2525;
 }
 
