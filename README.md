@@ -1,2 +1,2 @@
 # html-css
-a project about frontend-development(using HTML &amp; CSS)
+a project about frontend-development (using HTML &amp; CSS)
